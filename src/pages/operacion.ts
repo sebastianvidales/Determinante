@@ -66,6 +66,7 @@ export class operacion{
     }
     public DeterminanteY(){
 
+
         var matrizA1 = this.x1 * (this.result2 * this.y3 - this.result3 * this.y2);
         var matrizA2 = this.result1 * (this.x2 * this.y3 - this.x3 * this.y2);
         var matrizA3 = this.y1 * (this.x2 * this.result3 - this.x3 * this.result2);
