@@ -1,0 +1,151 @@
+<!--
+  Generated template for the DetsystemPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Determinante del sistema</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>Determinante</h2>
+
+  <ion-card>
+    <ion-item color="primary">
+        <font text-aling:center>Matriz Inicial</font>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-grid>
+      <ion-row>
+        <ion-col col-4><h3>{{cramer.x1}}</h3> </ion-col>
+        <ion-col col-4><h3>{{cramer.x2}}</h3> </ion-col>
+        <ion-col col-4><h3>{{cramer.x3}}</h3> </ion-col>
+
+      </ion-row>
+      <ion-row>
+        <ion-col col-4><h3>{{cramer.y1}}</h3> </ion-col>
+        <ion-col col-4><h3>{{cramer.y2}}</h3> </ion-col>
+        <ion-col col-4><h3>{{cramer.y3}}</h3> </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4><h3>{{cramer.z1}}</h3> </ion-col>
+        <ion-col col-4><h3>{{cramer.z2}}</h3> </ion-col>
+        <ion-col col-4><h3>{{cramer.z3}}</h3> </ion-col>
+      </ion-row>
+
+    </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-item color="primary">
+        <font text-aling:center>Matriz A1</font>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-grid>
+      <ion-row>
+        <ion-col col-6><h2>{{cramer.y2}}</h2> </ion-col>
+        <ion-col col-6><h2>{{cramer.y3}}</h2> </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-6><h2>{{cramer.z2}}</h2> </ion-col>
+        <ion-col col-6><h2>{{cramer.z3}}</h2> </ion-col>
+      </ion-row>
+
+    </ion-grid>
+    <br>
+    <ion-item color="danger">
+        <font text-aling:center>Resultado:  </font>
+        {{a1}}
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+
+    <ion-card>
+      <ion-item color="primary">
+          <font text-aling:center>Matriz A2</font>
+      </ion-item>
+
+      <ion-card-content>
+        <ion-grid>
+        <ion-row>
+          <ion-col col-6><h2>{{cramer.y1}}</h2> </ion-col>
+          <ion-col col-6><h2>{{cramer.y3}}</h2> </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-6><h2>{{cramer.z1}}</h2> </ion-col>
+          <ion-col col-6><h2>{{cramer.z3}}</h2> </ion-col>
+        </ion-row>
+
+      </ion-grid>
+      <br>
+      <ion-item color="danger">
+          <font text-aling:center>Resultado:  </font>
+          {{a2}}
+      </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item color="primary">
+          <font text-aling:center>Matriz A3</font>
+      </ion-item>
+
+      <ion-card-content>
+        <ion-grid>
+        <ion-row>
+          <ion-col col-6><h2>{{cramer.y1}}</h2> </ion-col>
+          <ion-col col-6><h2>{{cramer.y2}}</h2> </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-6><h2>{{cramer.z1}}</h2> </ion-col>
+          <ion-col col-6><h2>{{cramer.z2}}</h2> </ion-col>
+        </ion-row>
+
+      </ion-grid>
+      <br>
+      <ion-item color="danger">
+          <font text-aling:center>Resultado:  </font>
+          {{a3}}
+      </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+  <ion-card>
+    <ion-item color="primary">
+        <font text-aling:center>Operación</font>
+    </ion-item>
+
+    <ion-card-content>
+      <br>
+      <h2>({{cramer.x1}}) * {{a1}} - ({{cramer.x2}}) * {{a2}} + ({{cramer.x3}}) * {{a3}}</h2>
+
+    </ion-card-content>
+  </ion-card>
+
+    <ion-card>
+      <ion-item color="primary">
+          <font text-aling:center>Resultado</font>
+      </ion-item>
+      <ion-card-content>
+        <br>
+        <h1>{{detsys}}</h1>
+
+      </ion-card-content>
+    </ion-card>
+  <br><br><br><br>
+  <button ion-button block color="primary" (click)="irpaginadetx()">HALLAR RESULTADO X1</button>
+</ion-content>

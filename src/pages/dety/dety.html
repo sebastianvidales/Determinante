@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Matriz X2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="page-dety" padding>
+  <ion-card>
+    <ion-card-header>
+      <h1>Matriz X2</h1>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+      <ion-row>
+        <ion-col col-4><h2>{{cramer.x1}}</h2> </ion-col>
+        <ion-col col-4><h2>{{cramer.result1}}</h2> </ion-col>
+        <ion-col col-4><h2>{{cramer.z1}}</h2> </ion-col>
+
+      </ion-row>
+      <ion-row>
+        <ion-col col-4><h2>{{cramer.x2}}</h2> </ion-col>
+        <ion-col col-4><h2>{{cramer.result2}}</h2> </ion-col>
+        <ion-col col-4><h2>{{cramer.z2}}</h2> </ion-col>
+
+      </ion-row>
+      <ion-row>
+        <ion-col col-4><h2>{{cramer.x3}}</h2> </ion-col>
+        <ion-col col-4><h2>{{cramer.result3}}</h2> </ion-col>
+        <ion-col col-4><h2>{{cramer.z3}}</h2> </ion-col>
+
+      </ion-row>
+    </ion-grid>
+    <hr>
+    <p text-aling:center>{{detsys}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item color="primary">
+        <font text-aling:center>Resultado</font>
+    </ion-item>
+    <ion-card-content>
+      <br>
+      <h1>{{resultado}}</h1>
+
+    </ion-card-content>
+  </ion-card>
+  <br><br><br><br>
+  <button ion-button block color="primary" (click)="irpaginadetx3()">HALLAR RESULTADO X3</button>
+</ion-content>

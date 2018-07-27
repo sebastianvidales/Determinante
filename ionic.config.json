@@ -1,6 +1,6 @@
 {
   "name": "Matriz",
-  "app_id": "",
+  "app_id": "8cc327ed",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

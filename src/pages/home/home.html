@@ -1,17 +1,46 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Principal</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content class="page-home" padding>
+  <h2 text-aling="center">Regla de Cramer</h2>
+  <p>La regla de Cramer utiliza determinantes para resolver sistemas de ecuaciones lineales .</p>
+<br><br><br>
+<ion-card>
+  <ion-card-header>
+    <h1>Matriz Inicial</h1>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-grid>
+    <ion-row>
+      <ion-col col-3><h3>{{cramer.x1}}X1</h3> </ion-col>
+      <ion-col col-2><h3>{{cramer.x2}}X2</h3> </ion-col>
+      <ion-col col-2><h3>{{cramer.x3}}X3</h3> </ion-col>
+      <ion-col col-2><h3>=</h3> </ion-col>
+      <ion-col col-2><h3>-0,01</h3> </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col col-3><h3>{{cramer.y1}}X1</h3> </ion-col>
+      <ion-col col-2><h3>{{cramer.y2}}X2</h3> </ion-col>
+      <ion-col col-2><h3>{{cramer.y3}}X3</h3> </ion-col>
+      <ion-col col-2><h3>=</h3> </ion-col>
+      <ion-col col-2><h3>0,67</h3> </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3><h3>{{cramer.z1}}X1</h3> </ion-col>
+      <ion-col col-2><h3>{{cramer.z2}}X2</h3> </ion-col>
+      <ion-col col-2><h3>{{cramer.z3}}X3</h3> </ion-col>
+      <ion-col col-2><h3>=</h3> </ion-col>
+      <ion-col col-2><h3>-0,44</h3> </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+<br><br><br><br>
+<button ion-button block color="primary" (click)="irpagina_detsystem()">HALLAR DETERMINANTE</button>
 </ion-content>
